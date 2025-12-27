@@ -10,13 +10,17 @@
   <meta property="og:title" content="DeTapeo — Producto primero" />
   <meta property="og:description" content="Menos “bar famoso”, más “pincho glorioso”. 🍢 Rankings por producto con votos y fotos reales. Apúntate y te avisamos del lanzamiento." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="DeTapeo — Producto primero" />
   <meta name="twitter:description" content="Encuentra la mejor tapa, estés donde estés. Rankings por producto con votos reales. Próximamente." />
+  <meta name="twitter:site" content="@DeTapeoApp" />
+  <meta name="twitter:image" content="assets/og.png" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/detapeo-icon-256.png" />
   <link rel="stylesheet" href="styles.css" />
 
   <meta name="theme-color" content="#0b0b0f" />
@@ -26,7 +30,7 @@
   <header class="header">
     <div class="container header__row">
       <a class="brand" href="#" aria-label="DeTapeo, inicio">
-        <span class="brand__mark" aria-hidden="true">🍢</span>
+        <img class="brand__logo" src="assets/detapeo-icon-256.png" width="36" height="36" alt="" aria-hidden="true" />
         <span class="brand__name">DeTapeo</span>
         <span class="brand__badge" title="En desarrollo">En desarrollo</span>
       </a>
@@ -35,6 +39,7 @@
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#producto-primero">Producto primero</a>
         <a href="#confianza">Confianza</a>
+        <a href="https://x.com/DeTapeoApp" target="_blank" rel="noopener">X @DeTapeoApp</a>
         <a href="#waitlist" class="nav__cta">Avisadme</a>
       </nav>
     </div>
@@ -70,87 +75,43 @@
             <a class="btn btn--ghost" href="#waitlist" data-intent="beta">Quiero entrar en la beta</a>
           </div>
 
-          <div class="proof">
-            <div class="proof__item">
-              <span class="proof__icon" aria-hidden="true">🔍</span>
-              <span><strong>Busca por tapa</strong>, no por local</span>
-            </div>
-            <div class="proof__item">
-              <span class="proof__icon" aria-hidden="true">🗳️</span>
-              <span><strong>Ranking justo</strong> con comunidad</span>
-            </div>
-            <div class="proof__item">
-              <span class="proof__icon" aria-hidden="true">📍</span>
-              <span><strong>Cerca de ti</strong>, de verdad</span>
-            </div>
+          <div class="pillrow" aria-label="Características principales">
+            <span class="pill">Rankings por producto</span>
+            <span class="pill">Mapa cerca de ti</span>
+            <span class="pill">Votos + fotos reales</span>
           </div>
 
           <p class="tiny muted">
-            Estamos construyéndola con cariño (y hambre). Apúntate y te avisamos cuando esté lista.
+            Síguenos en X: <a href="https://x.com/DeTapeoApp" target="_blank" rel="noopener"><strong>@DeTapeoApp</strong></a>.
+            (Prometemos guerras sanas: tortilla con/ sin cebolla, pero con datos.)
           </p>
         </div>
 
-        <div class="hero__mock" aria-label="Maqueta de la app">
-          <div class="phone" role="img" aria-label="Vista previa conceptual de DeTapeo">
-            <div class="phone__top">
-              <div class="chip">Producto: <strong>Croquetas</strong></div>
-              <div class="chip chip--muted">Radio: 2 km</div>
-            </div>
-
-            <div class="phone__title">Top cerca de ti</div>
-            <div class="phone__subtitle">Votos reales · Fotos reales</div>
-
-            <div class="rank">
-              <div class="rank__row">
-                <div class="rank__left">
-                  <div class="rank__pos">#1</div>
-                  <div>
-                    <div class="rank__name">Croqueta de jamón</div>
-                    <div class="rank__meta">Cruje · cremosa · 4.8</div>
-                  </div>
-                </div>
-                <div class="rank__pill">🔥</div>
-              </div>
-
-              <div class="rank__row">
-                <div class="rank__left">
-                  <div class="rank__pos">#2</div>
-                  <div>
-                    <div class="rank__name">Boletus</div>
-                    <div class="rank__meta">Suave · 4.7</div>
-                  </div>
-                </div>
-                <div class="rank__pill">🏆</div>
-              </div>
-
-              <div class="rank__row">
-                <div class="rank__left">
-                  <div class="rank__pos">#3</div>
-                  <div>
-                    <div class="rank__name">Rabo de toro</div>
-                    <div class="rank__meta">Intensa · 4.6</div>
-                  </div>
-                </div>
-                <div class="rank__pill">🤤</div>
-              </div>
-            </div>
-
-            <div class="phone__bottom">
-              <div class="mini">
-                <span aria-hidden="true">🧭</span> Mapa
-              </div>
-              <div class="mini mini--active">
-                <span aria-hidden="true">🏆</span> Ranking
-              </div>
-              <div class="mini">
-                <span aria-hidden="true">👤</span> Perfil
+        <div class="hero__visual" aria-label="Logo de la app">
+          <div class="appcard">
+            <img
+              class="appcard__icon"
+              src="assets/detapeo-icon-512.png"
+              srcset="assets/detapeo-icon-256.png 256w, assets/detapeo-icon-512.png 512w"
+              sizes="160px"
+              width="160"
+              height="160"
+              alt="Logo de DeTapeo"
+              loading="eager"
+            />
+            <div class="appcard__meta">
+              <div class="appcard__title">DeTapeo</div>
+              <div class="appcard__subtitle">Encuentra la mejor tapa, por producto.</div>
+              <div class="badge-row" aria-label="Estado">
+                <span class="badge">Próximamente</span>
+                <span class="badge badge--muted">Google Play</span>
               </div>
             </div>
           </div>
 
-          <div class="mocknote muted tiny">
-            *Maqueta conceptual. La app aún está en desarrollo.
-          </div>
+          <p class="tiny muted center">
+            La app está en desarrollo. Si te apuntas, te avisamos cuando esté lista.
+          </p>
         </div>
       </div>
     </section>
@@ -160,7 +121,7 @@
       <div class="container">
         <div class="section__head">
           <h2>Cómo funciona</h2>
-          <p class="section__sub">El flujo es simple: antojo → ranking → a disfrutar.</p>
+          <p class="section__sub">Antojo → ranking → a disfrutar.</p>
         </div>
 
         <div class="grid3">
@@ -194,27 +155,23 @@
 
         <div class="grid2">
           <article class="feature">
-            <div class="feature__icon" aria-hidden="true">🍽️</div>
             <h3>Busca por tapa</h3>
             <p>La decisión empieza por el antojo: “quiero croquetas” → te mostramos las top.</p>
           </article>
 
           <article class="feature">
-            <div class="feature__icon" aria-hidden="true">🏆</div>
             <h3>Ranking transparente</h3>
-            <p>Cuantas más reseñas reales, más fiable el resultado. Sin rankings inflados.</p>
+            <p>La nota sale de la comunidad. Cuantas más reseñas reales, más fiable.</p>
           </article>
 
           <article class="feature">
-            <div class="feature__icon" aria-hidden="true">❤️</div>
+            <h3>Cerca de ti, de verdad</h3>
+            <p>Encuentra las mejores tapas según tu ubicación o tu ciudad.</p>
+          </article>
+
+          <article class="feature">
             <h3>Guarda favoritas</h3>
-            <p>Crea colecciones y vuelve a tiro fijo cuando te entre el antojo.</p>
-          </article>
-
-          <article class="feature">
-            <div class="feature__icon" aria-hidden="true">🎯</div>
-            <h3>Rápido y útil</h3>
-            <p>Menos scroll, más decidir. En dos toques estás yendo a lo bueno.</p>
+            <p>Guarda tapas para volver a tiro fijo y crea colecciones (cuando lo activemos).</p>
           </article>
         </div>
       </div>
@@ -224,7 +181,7 @@
     <section class="section">
       <div class="container">
         <div class="section__head">
-          <h2>Comparte y gana reconocimiento</h2>
+          <h2>Comparte tu experiencia</h2>
           <p class="section__sub">
             En DeTapeo no solo consumes contenido: <strong>formas parte de él</strong>.
           </p>
@@ -232,22 +189,20 @@
 
         <div class="grid2">
           <div class="panel">
-            <h3>Tu aporte cuenta</h3>
+            <h3>Opiniones útiles</h3>
             <ul class="list">
-              <li>📝 Valora tapas con criterio (sin novelas).</li>
-              <li>📸 Sube fotos útiles (cero stock, cero postureo).</li>
-              <li>💸 Aporta precios reales cuando puedas.</li>
-              <li>👍 Recibe likes por reseñas útiles.</li>
+              <li>Reseñas con fotos reales (sin stock, sin humo).</li>
+              <li>Una reseña por tapa y persona (para que el ranking tenga sentido).</li>
+              <li>Indicadores de reseñas hechas cerca del local.</li>
             </ul>
           </div>
 
           <div class="panel">
-            <h3>Gamificación sana</h3>
+            <h3>Reconocimiento (sin postureo)</h3>
             <ul class="list">
-              <li>🎖️ Niveles, retos y emblemas.</li>
-              <li>🏅 Reconocimiento a quienes mejor reseñan.</li>
-              <li>🧠 Indicadores de “reseña cerca del local”.</li>
-              <li>🛡️ Moderación comunitaria.</li>
+              <li>Likes a reseñas útiles.</li>
+              <li>Niveles, retos y emblemas (poco a poco).</li>
+              <li>La comunidad ayuda a moderar.</li>
             </ul>
           </div>
         </div>
@@ -258,21 +213,21 @@
     <section id="confianza" class="section section--soft2">
       <div class="container">
         <div class="section__head">
-          <h2>Confianza y calidad primero</h2>
+          <h2>Confianza y calidad</h2>
           <p class="section__sub">
-            Para que puedas fiarte de lo que ves, sin sorpresas.
+            Todo pensado para que confíes en lo que ves.
           </p>
         </div>
 
         <div class="grid3">
           <article class="card">
-            <h3>Una reseña por tapa y persona</h3>
-            <p>Menos spam, más señal. Así el ranking tiene sentido.</p>
+            <h3>Ranking justo</h3>
+            <p>Cuantas más reseñas reales, más fiable es el resultado.</p>
           </article>
 
           <article class="card">
             <h3>Fotos reales</h3>
-            <p>La tapa manda. Lo que ves es lo que hay (o lo que te vas a comer).</p>
+            <p>Lo que ves es lo que hay (o lo que te vas a comer).</p>
           </article>
 
           <article class="card">
@@ -288,7 +243,7 @@
       <div class="container">
         <div class="section__head">
           <h2>En qué punto estamos</h2>
-          <p class="section__sub">La app está en desarrollo. Vamos paso a paso, pero con hambre.</p>
+          <p class="section__sub">La app está en desarrollo. Vamos paso a paso.</p>
         </div>
 
         <div class="roadmap">
@@ -314,7 +269,7 @@
         </div>
 
         <p class="tiny muted">
-          *No prometemos fecha, prometemos cariño. Si te apuntas, te avisamos cuando esté.
+          *No prometemos fecha, prometemos cariño. Si te apuntas, te avisamos.
         </p>
       </div>
     </section>
@@ -330,7 +285,7 @@
         </div>
 
         <div class="formwrap">
-          <form id="waitlistForm" class="form" method="POST" action="https://formspree.io/f/mwvkowov">
+          <form id="waitlistForm" class="form" method="POST" action="https://formspree.io/f/REEMPLAZA_ESTE_ID">
             <input type="hidden" name="_subject" value="[DeTapeo] Nuevo registro en la waitlist" />
 
             <div class="form__grid">
@@ -358,7 +313,7 @@
 
               <label class="check">
                 <input id="betaOptIn" name="beta" type="checkbox" />
-                <span>Quiero entrar en la beta (si hace falta, os doy mi opinión sin piedad 😄).</span>
+                <span>Quiero entrar en la beta.</span>
               </label>
             </div>
 
@@ -373,18 +328,21 @@
 
           <aside class="aside">
             <div class="aside__box">
-              <h3>¿Qué recibirás?</h3>
+              <h3>Qué recibirás</h3>
               <ul class="list">
-                <li>📲 Aviso cuando salga.</li>
-                <li>🧪 Invitación a la beta (si te apuntas).</li>
-                <li>🗳️ Encuestas rápidas para decidir productos/categorías.</li>
+                <li>Aviso cuando salga.</li>
+                <li>Invitación a la beta (si te apuntas).</li>
+                <li>Encuestas rápidas para decidir productos/categorías.</li>
               </ul>
             </div>
 
             <div class="aside__box aside__box--soft">
               <h3>Contacto</h3>
-              <p class="muted">Escríbenos si quieres colaborar o probar antes:</p>
+              <p class="muted">Si quieres colaborar o probar antes:</p>
               <p><a class="mail" href="mailto:detapeoapp@gmail.com">detapeoapp@gmail.com</a></p>
+              <p class="tiny muted" style="margin-top:10px;">
+                También en X: <a href="https://x.com/DeTapeoApp" target="_blank" rel="noopener"><strong>@DeTapeoApp</strong></a>
+              </p>
             </div>
           </aside>
         </div>
@@ -396,7 +354,7 @@
       <div class="container">
         <div class="section__head">
           <h2>FAQ</h2>
-          <p class="section__sub">Lo típico que se pregunta antes de lanzarse a la croqueta.</p>
+          <p class="section__sub">Lo típico antes de lanzarse a la croqueta.</p>
         </div>
 
         <div class="faq">
@@ -431,16 +389,20 @@
     <div class="container footer__row">
       <div class="footer__left">
         <div class="footer__brand">
-          <span aria-hidden="true">🍢</span>
+          <img class="footer__logo" src="assets/detapeo-icon-256.png" width="22" height="22" alt="" aria-hidden="true" />
           <strong>DeTapeo</strong>
         </div>
         <div class="tiny muted">© <span id="year"></span> · Producto primero</div>
       </div>
 
       <div class="footer__links">
-        <!-- Cambia este enlace por tu @ real cuando quieras -->
-        <a href="https://x.com/DeTapeoApp" aria-label="X">X</a>
+        <a href="https://x.com/DeTapeoApp" target="_blank" rel="noopener">@DeTapeoApp</a>
         <a href="privacy.html">Privacidad</a>
+      </div>
+
+      <div class="footer__dev" aria-label="Desarrollado por Celsoria Apps">
+        <span class="tiny muted">Desarrollado por</span>
+        <img class="celsoria" src="assets/celsoria-apps.png" alt="Celsoria Apps" loading="lazy" />
       </div>
     </div>
   </footer>

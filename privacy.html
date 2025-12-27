@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Política de privacidad de DeTapeo." />
+  <meta name="description" content="Política de Privacidad de DeTapeo." />
   <title>Privacidad — DeTapeo</title>
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/detapeo-icon-256.png" />
   <link rel="stylesheet" href="styles.css" />
   <meta name="theme-color" content="#0b0b0f" />
 </head>
@@ -15,7 +16,7 @@
   <header class="header">
     <div class="container header__row">
       <a class="brand" href="index.html" aria-label="DeTapeo, volver al inicio">
-        <span class="brand__mark" aria-hidden="true">🍢</span>
+        <img class="brand__logo" src="assets/detapeo-icon-256.png" width="36" height="36" alt="" aria-hidden="true" />
         <span class="brand__name">DeTapeo</span>
         <span class="brand__badge">Privacidad</span>
       </a>
@@ -45,28 +46,31 @@
           <p class="muted">
             Para proporcionar nuestros servicios, la aplicación puede solicitar acceso a los siguientes datos:
           </p>
-
           <ul class="list">
             <li>
-              <span aria-hidden="true">👤</span>
-              <span><strong>Información de la cuenta:</strong> Al registrarse a través de Google o correo electrónico, recopilamos su dirección de correo electrónico, nombre y foto de perfil (avatar) para crear su cuenta de usuario y gestionar sus preferencias.</span>
+              <strong>Información de la cuenta:</strong>
+              Al registrarse a través de Google o correo electrónico, recopilamos su dirección de correo electrónico, nombre y foto de perfil (avatar)
+              para crear su cuenta de usuario y gestionar sus preferencias.
             </li>
             <li>
-              <span aria-hidden="true">📍</span>
-              <span><strong>Ubicación (GPS):</strong> Solicitamos acceso a su ubicación precisa y aproximada para mostrarle bares, restaurantes y tapas cercanos a su posición en el mapa. Estos datos de ubicación no se almacenan en nuestros servidores de forma permanente para rastrear su historial de movimientos, solo se usan en tiempo real para la funcionalidad del mapa.</span>
+              <strong>Ubicación (GPS):</strong>
+              Solicitamos acceso a su ubicación precisa y aproximada para mostrarle bares, restaurantes y tapas cercanos a su posición en el mapa.
+              Estos datos de ubicación no se almacenan en nuestros servidores de forma permanente para rastrear su historial de movimientos, solo se usan
+              en tiempo real para la funcionalidad del mapa.
             </li>
             <li>
-              <span aria-hidden="true">📷</span>
-              <span><strong>Cámara y Galería:</strong> Solicitamos acceso a sus fotos únicamente si usted decide subir una imagen para su foto de perfil o para compartir imágenes de tapas/bares en la comunidad.</span>
+              <strong>Cámara y Galería:</strong>
+              Solicitamos acceso a sus fotos únicamente si usted decide subir una imagen para su foto de perfil o para compartir imágenes de tapas/bares
+              en la comunidad.
             </li>
           </ul>
 
           <h3 style="margin-top:16px;">3. Cómo usamos su información</h3>
           <p class="muted">Utilizamos la información recopilada para:</p>
           <ul class="list">
-            <li><span aria-hidden="true">🔐</span><span>Autenticar su identidad y mantener su sesión iniciada.</span></li>
-            <li><span aria-hidden="true">🗺️</span><span>Mostrarle establecimientos cercanos (funcionalidad principal).</span></li>
-            <li><span aria-hidden="true">❤️</span><span>Permitirle guardar favoritos y personalizar su perfil.</span></li>
+            <li>Autenticar su identidad y mantener su sesión iniciada.</li>
+            <li>Mostrarle establecimientos cercanos (funcionalidad principal).</li>
+            <li>Permitirle guardar favoritos y personalizar su perfil.</li>
           </ul>
 
           <h3 style="margin-top:16px;">4. Servicios de Terceros</h3>
@@ -74,9 +78,9 @@
             Compartimos datos con los siguientes proveedores de servicios necesarios para el funcionamiento de la App:
           </p>
           <ul class="list">
-            <li><span aria-hidden="true">🧩</span><span><strong>Supabase:</strong> Proveedor de base de datos y autenticación.</span></li>
-            <li><span aria-hidden="true">🔑</span><span><strong>Google OAuth:</strong> Para facilitar el inicio de sesión seguro.</span></li>
-            <li><span aria-hidden="true">🧭</span><span><strong>OpenStreetMap / Mapbox:</strong> Para la visualización de mapas.</span></li>
+            <li><strong>Supabase:</strong> Proveedor de base de datos y autenticación.</li>
+            <li><strong>Google OAuth:</strong> Para facilitar el inicio de sesión seguro.</li>
+            <li><strong>OpenStreetMap / Mapbox:</strong> Para la visualización de mapas.</li>
           </ul>
 
           <h3 style="margin-top:16px;">5. Eliminación de datos</h3>
@@ -100,14 +104,20 @@
     <div class="container footer__row">
       <div class="footer__left">
         <div class="footer__brand">
-          <span aria-hidden="true">🍢</span>
+          <img class="footer__logo" src="assets/detapeo-icon-256.png" width="22" height="22" alt="" aria-hidden="true" />
           <strong>DeTapeo</strong>
         </div>
-        <div class="tiny muted">© <span id="year"></span> · Producto primero</div>
+        <div class="tiny muted">© <span id="year"></span></div>
       </div>
 
       <div class="footer__links">
+        <a href="https://x.com/DeTapeoApp" target="_blank" rel="noopener">@DeTapeoApp</a>
         <a href="index.html">Inicio</a>
+      </div>
+
+      <div class="footer__dev" aria-label="Desarrollado por Celsoria Apps">
+        <span class="tiny muted">Desarrollado por</span>
+        <img class="celsoria" src="assets/celsoria-apps.png" alt="Celsoria Apps" loading="lazy" />
       </div>
     </div>
   </footer>

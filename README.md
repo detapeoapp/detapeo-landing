@@ -1,21 +1,20 @@
-# DeTapeo Landing — Waitlist (v2)
+# DeTapeo Landing — Waitlist (v3)
 
 Landing estática (HTML/CSS/JS) para tener un **link único** en X mientras la app está en desarrollo.
 
-## Qué incluye
-- Mensaje “producto primero” + tono DeTapeo
-- Formulario de waitlist (email) + opción beta
-- Página de privacidad (`privacy.html`)
-- Estilos modernos, ligeros y responsive
+✅ Mensaje **producto primero**  
+✅ Formulario de **waitlist** (email) + checkbox **beta**  
+✅ Página de **privacidad** incluida  
+✅ Diseño limpio y profesional (sin recargar)
 
 ---
 
-## 1) Configurar el formulario (lo mínimo para capturar emails)
+## 1) Configurar el formulario (para capturar emails)
 
 En `index.html`, busca esto:
 
 ```html
-<form id="waitlistForm" ... action="https://formspree.io/f/REEMPLAZA_ESTE_ID">
+<form id="waitlistForm" class="form" method="POST" action="https://formspree.io/f/REEMPLAZA_ESTE_ID">
 ```
 
 ### Opción A — Formspree (rápido)
@@ -26,14 +25,7 @@ En `index.html`, busca esto:
 
 ✅ Listo.
 
-> Si no lo cambias, la web te avisará con un mensaje en rojo.
-
-### Opción B — Google Forms / Sheets (sin Formspree)
-Si quieres, puedes:
-- enlazar el botón directamente a un Google Form, o
-- usar Google Apps Script como endpoint (más pro).
-
-Si me lo pides, te preparo la versión Google Sheets + Apps Script.
+> Si no lo cambias, la web mostrará un aviso en rojo.
 
 ---
 
@@ -52,15 +44,24 @@ Ese es tu link único para X.
 
 ---
 
-## 3) Cambios rápidos recomendados
-- Cambia el enlace “X” del footer por tu perfil real.
-- Si tienes dominio, añade tu OG image y URL.
-- Ajusta los textos (productos estrella, ciudad inicial, etc.).
+## 3) Cambios recomendados (2 minutos)
+
+- En el header y footer ya está el link a X: **@DeTapeoApp**
+- Si quieres cambiar el texto “Próximamente”, edita la hero card en `index.html`.
+- En `privacy.html` está tu política de privacidad.
 
 ---
 
-## 4) Sugerencia de “tuit fijado”
+## 4) Assets incluidos
+
+- `assets/detapeo-icon-256.png` y `assets/detapeo-icon-512.png` (logo de la app)
+- `assets/celsoria-apps.png` (logo pequeño del desarrollador, usado en el footer)
+- `assets/og.png` (imagen para compartir en X/WhatsApp; si quieres lo ideal es poner la URL absoluta en las metas OG)
+
+---
+
+## 5) Sugerencia de tuit fijado
+
 > Menos “bar famoso”, más “pincho glorioso”. 🍢  
 > Estamos construyendo DeTapeo: rankings por producto con votos y fotos reales.  
 > Únete a la lista: (tu link)
-

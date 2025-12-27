@@ -1,4 +1,4 @@
-// DeTapeo Landing (v2)
+// DeTapeo Landing (v3)
 // - year
 // - CTA intent (beta)
 // - optional AJAX submit with friendly status
@@ -58,7 +58,7 @@
         form.reset();
         statusEl.className = "status ok";
         statusEl.textContent =
-          "✅ Dentro. Te avisamos cuando salga (y cuando haya guerra de croquetas).";
+          "✅ Dentro. Te avisamos cuando salga (y cuando haya guerra de tortilla).";
       } else {
         statusEl.className = "status bad";
         statusEl.textContent =
