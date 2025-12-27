@@ -3,225 +3,442 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="DeTapeo: rankings de tapas por producto. Menos bar famoso, más pincho glorioso. Apúntate y te avisamos del lanzamiento." />
+  <meta name="description" content="DeTapeo: encuentra la mejor tapa, estés donde estés. Rankings por producto con votos y fotos reales. Apúntate y te avisamos del lanzamiento." />
   <title>DeTapeo — Producto primero</title>
 
   <!-- Open Graph -->
   <meta property="og:title" content="DeTapeo — Producto primero" />
-  <meta property="og:description" content="Menos “bar famoso”, más “pincho glorioso”. 🍢 Rankings por producto. Apúntate y te avisamos del lanzamiento." />
+  <meta property="og:description" content="Menos “bar famoso”, más “pincho glorioso”. 🍢 Rankings por producto con votos y fotos reales. Apúntate y te avisamos del lanzamiento." />
   <meta property="og:type" content="website" />
-  <!-- Si luego tienes imagen: descomenta y pon tu URL
-  <meta property="og:image" content="https://TU-DOMINIO/og.png" />
-  -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DeTapeo — Producto primero" />
+  <meta name="twitter:description" content="Encuentra la mejor tapa, estés donde estés. Rankings por producto con votos reales. Próximamente." />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+
+  <meta name="theme-color" content="#0b0b0f" />
 </head>
 
 <body>
   <header class="header">
-    <div class="container row">
-      <a class="brand" href="#" aria-label="DeTapeo">
-        <span class="brand__mark">🍢</span>
+    <div class="container header__row">
+      <a class="brand" href="#" aria-label="DeTapeo, inicio">
+        <span class="brand__mark" aria-hidden="true">🍢</span>
         <span class="brand__name">DeTapeo</span>
+        <span class="brand__badge" title="En desarrollo">En desarrollo</span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Navegación">
         <a href="#como-funciona">Cómo funciona</a>
-        <a href="#waitlist" class="pill">Avisadme</a>
+        <a href="#producto-primero">Producto primero</a>
+        <a href="#confianza">Confianza</a>
+        <a href="#waitlist" class="nav__cta">Avisadme</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="kicker">Producto primero · En desarrollo</p>
+          <p class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Producto primero · Comunidad · Cerca de ti
+          </p>
+
           <h1>
-            Menos <span class="quote">“bar famoso”</span>,<br/>
-            más <span class="quote">“pincho glorioso”</span>. <span class="emoji">🍢</span>
+            Encuentra la <span class="hl">mejor tapa</span>,<br/>
+            estés donde estés.
           </h1>
 
           <p class="lead">
-            DeTapeo es una app para descubrir <strong>lo mejor por producto</strong> (croquetas, tortilla, bravas…).
-            Tú votas, la comunidad decide y el antojo manda.
+            ¿Cansado de ir “a ciegas” cuando sales de tapas?
+            En <strong>DeTapeo</strong> no se valora solo el bar: se valora <strong>cada tapa</strong>.
+            Busca por producto (croquetas, tortilla, bravas…) y decide con <strong>votos y fotos reales</strong>.
+          </p>
+
+          <p class="tagline">
+            <strong>Menos “bar famoso”. Más “pincho glorioso”.</strong> 🍢
           </p>
 
           <div class="cta">
             <a class="btn btn--primary" href="#waitlist">Quiero que me aviséis</a>
-            <a class="btn btn--ghost" href="#beta">Quiero entrar en la beta</a>
+            <a class="btn btn--ghost" href="#waitlist" data-intent="beta">Quiero entrar en la beta</a>
           </div>
 
-          <ul class="bullets" aria-label="Características principales">
-            <li>🏆 Rankings por <strong>producto</strong> (no por “sitio bonito”).</li>
-            <li>📍 Mapa para encontrar <strong>dónde</strong> comer eso que te apetece.</li>
-            <li>🗳️ Votos + fotos reales (sin humo).</li>
-          </ul>
+          <div class="proof">
+            <div class="proof__item">
+              <span class="proof__icon" aria-hidden="true">🔍</span>
+              <span><strong>Busca por tapa</strong>, no por local</span>
+            </div>
+            <div class="proof__item">
+              <span class="proof__icon" aria-hidden="true">🗳️</span>
+              <span><strong>Ranking justo</strong> con comunidad</span>
+            </div>
+            <div class="proof__item">
+              <span class="proof__icon" aria-hidden="true">📍</span>
+              <span><strong>Cerca de ti</strong>, de verdad</span>
+            </div>
+          </div>
 
-          <p class="tiny note">
-            Nota: estamos cocinándolo a fuego lento. Si te apuntas, te avisamos cuando salga.
+          <p class="tiny muted">
+            Estamos construyéndola con cariño (y hambre). Apúntate y te avisamos cuando esté lista.
           </p>
         </div>
 
-        <div class="hero__card" aria-label="Tarjeta de ejemplo">
-          <div class="card">
-            <div class="card__top">
-              <span class="tag">Ejemplo</span>
-              <span class="tag tag--muted">Mock</span>
+        <div class="hero__mock" aria-label="Maqueta de la app">
+          <div class="phone" role="img" aria-label="Vista previa conceptual de DeTapeo">
+            <div class="phone__top">
+              <div class="chip">Producto: <strong>Croquetas</strong></div>
+              <div class="chip chip--muted">Radio: 2 km</div>
             </div>
 
-            <div class="card__title">Croqueta de jamón</div>
-            <div class="card__subtitle">Lo mejor por producto</div>
+            <div class="phone__title">Top cerca de ti</div>
+            <div class="phone__subtitle">Votos reales · Fotos reales</div>
 
-            <div class="score">
-              <div class="score__big">#1</div>
-              <div class="score__meta">
-                <div class="score__line"><strong>Ranking</strong> comunidad</div>
-                <div class="score__line">“Si no cruje, no cuenta”</div>
+            <div class="rank">
+              <div class="rank__row">
+                <div class="rank__left">
+                  <div class="rank__pos">#1</div>
+                  <div>
+                    <div class="rank__name">Croqueta de jamón</div>
+                    <div class="rank__meta">Cruje · cremosa · 4.8</div>
+                  </div>
+                </div>
+                <div class="rank__pill">🔥</div>
+              </div>
+
+              <div class="rank__row">
+                <div class="rank__left">
+                  <div class="rank__pos">#2</div>
+                  <div>
+                    <div class="rank__name">Boletus</div>
+                    <div class="rank__meta">Suave · 4.7</div>
+                  </div>
+                </div>
+                <div class="rank__pill">🏆</div>
+              </div>
+
+              <div class="rank__row">
+                <div class="rank__left">
+                  <div class="rank__pos">#3</div>
+                  <div>
+                    <div class="rank__name">Rabo de toro</div>
+                    <div class="rank__meta">Intensa · 4.6</div>
+                  </div>
+                </div>
+                <div class="rank__pill">🤤</div>
               </div>
             </div>
 
-            <div class="card__list">
-              <div class="row-between"><span>🥇 Candidata A</span><span class="muted">4.8</span></div>
-              <div class="row-between"><span>🥈 Candidata B</span><span class="muted">4.7</span></div>
-              <div class="row-between"><span>🥉 Candidata C</span><span class="muted">4.6</span></div>
+            <div class="phone__bottom">
+              <div class="mini">
+                <span aria-hidden="true">🧭</span> Mapa
+              </div>
+              <div class="mini mini--active">
+                <span aria-hidden="true">🏆</span> Ranking
+              </div>
+              <div class="mini">
+                <span aria-hidden="true">👤</span> Perfil
+              </div>
             </div>
+          </div>
 
-            <div class="card__bottom muted">
-              *Esto es una maqueta para enseñarte la idea.
-            </div>
+          <div class="mocknote muted tiny">
+            *Maqueta conceptual. La app aún está en desarrollo.
           </div>
         </div>
       </div>
     </section>
 
+    <!-- HOW IT WORKS -->
     <section id="como-funciona" class="section">
       <div class="container">
-        <h2>Cómo funciona</h2>
+        <div class="section__head">
+          <h2>Cómo funciona</h2>
+          <p class="section__sub">El flujo es simple: antojo → ranking → a disfrutar.</p>
+        </div>
+
         <div class="grid3">
-          <div class="feature">
+          <article class="card">
             <h3>1) Elige el producto</h3>
-            <p>Croquetas, tortilla, bravas… Aquí manda el antojo.</p>
-          </div>
-          <div class="feature">
+            <p>Entra directo a lo que te apetece: tortilla, bravas, croquetas…</p>
+          </article>
+
+          <article class="card">
             <h3>2) Mira el ranking</h3>
-            <p>Top por producto con votos y fotos de la comunidad.</p>
-          </div>
-          <div class="feature">
+            <p>Votos, fotos y comentarios reales. Menos humo, más bocado.</p>
+          </article>
+
+          <article class="card">
             <h3>3) Decide dónde ir</h3>
             <p>El bar es el “dónde”. El producto es el “por qué”.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT FIRST -->
+    <section id="producto-primero" class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <h2>Producto primero</h2>
+          <p class="section__sub">
+            No buscamos “el mejor bar”. Buscamos <strong>la mejor tapa</strong>.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">🍽️</div>
+            <h3>Busca por tapa</h3>
+            <p>La decisión empieza por el antojo: “quiero croquetas” → te mostramos las top.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">🏆</div>
+            <h3>Ranking transparente</h3>
+            <p>Cuantas más reseñas reales, más fiable el resultado. Sin rankings inflados.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">❤️</div>
+            <h3>Guarda favoritas</h3>
+            <p>Crea colecciones y vuelve a tiro fijo cuando te entre el antojo.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">🎯</div>
+            <h3>Rápido y útil</h3>
+            <p>Menos scroll, más decidir. En dos toques estás yendo a lo bueno.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Comparte y gana reconocimiento</h2>
+          <p class="section__sub">
+            En DeTapeo no solo consumes contenido: <strong>formas parte de él</strong>.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>Tu aporte cuenta</h3>
+            <ul class="list">
+              <li>📝 Valora tapas con criterio (sin novelas).</li>
+              <li>📸 Sube fotos útiles (cero stock, cero postureo).</li>
+              <li>💸 Aporta precios reales cuando puedas.</li>
+              <li>👍 Recibe likes por reseñas útiles.</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Gamificación sana</h3>
+            <ul class="list">
+              <li>🎖️ Niveles, retos y emblemas.</li>
+              <li>🏅 Reconocimiento a quienes mejor reseñan.</li>
+              <li>🧠 Indicadores de “reseña cerca del local”.</li>
+              <li>🛡️ Moderación comunitaria.</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="waitlist" class="section section--accent">
+    <!-- TRUST -->
+    <section id="confianza" class="section section--soft2">
       <div class="container">
-        <h2>Apúntate y te avisamos del lanzamiento</h2>
-        <p class="lead2">
-          Nada de spam. Solo un mensaje cuando esté lista (y alguna encuesta divertida de vez en cuando).
-        </p>
+        <div class="section__head">
+          <h2>Confianza y calidad primero</h2>
+          <p class="section__sub">
+            Para que puedas fiarte de lo que ves, sin sorpresas.
+          </p>
+        </div>
 
-        <div class="formbox">
-          <form id="waitlistForm" method="POST" action="https://formspree.io/f/mwvkowov">
-            <label class="label">
-              Email
-              <input name="email" type="email" placeholder="tuemail@ejemplo.com" required />
-            </label>
+        <div class="grid3">
+          <article class="card">
+            <h3>Una reseña por tapa y persona</h3>
+            <p>Menos spam, más señal. Así el ranking tiene sentido.</p>
+          </article>
 
-            <div class="row row--gap">
-              <label class="label">
-                Ciudad (opcional)
-                <input name="city" type="text" placeholder="Salamanca, Madrid…" />
-              </label>
+          <article class="card">
+            <h3>Fotos reales</h3>
+            <p>La tapa manda. Lo que ves es lo que hay (o lo que te vas a comer).</p>
+          </article>
 
-              <label class="label">
-                Producto favorito (opcional)
-                <input name="favorite_product" type="text" placeholder="Croquetas, tortilla…" />
-              </label>
-            </div>
-
-            <label class="checkbox">
-              <input name="consent" type="checkbox" required />
-              <span>Acepto que me contactéis para avisarme del lanzamiento (ver <a href="privacy.html">privacidad</a>).</span>
-            </label>
-
-            <button class="btn btn--primary" type="submit">Avisadme</button>
-
-            <p class="tiny muted">
-              *Tienes que cambiar el enlace del formulario por el tuyo (ver README).
-            </p>
-          </form>
-
-          <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+          <article class="card">
+            <h3>Moderación comunitaria</h3>
+            <p>Herramientas para reportar y mantener el contenido limpio.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="beta" class="section">
+    <!-- ROADMAP -->
+    <section class="section">
       <div class="container">
-        <h2>Beta testers</h2>
-        <p class="lead2">
-          ¿Te gusta comer y opinar? Perfecto. Apúntate y te avisamos cuando abramos la beta.
-        </p>
+        <div class="section__head">
+          <h2>En qué punto estamos</h2>
+          <p class="section__sub">La app está en desarrollo. Vamos paso a paso, pero con hambre.</p>
+        </div>
 
-        <div class="beta-grid">
-          <div class="beta-card">
-            <h3>Qué buscamos</h3>
-            <ul class="check">
-              <li>Gente con hambre (requisito oficial).</li>
-              <li>Opiniones claras: “esta brava sí / esta brava no”.</li>
-              <li>Fotos rápidas (sin postureo, con verdad).</li>
+        <div class="roadmap">
+          <div class="roadmap__col">
+            <h3>En construcción</h3>
+            <ul class="checks">
+              <li><span class="chk" aria-hidden="true"></span> Ranking por producto</li>
+              <li><span class="chk" aria-hidden="true"></span> Mapa “cerca de ti”</li>
+              <li><span class="chk" aria-hidden="true"></span> Perfiles + favoritos</li>
+              <li><span class="chk" aria-hidden="true"></span> Fotos y reseñas</li>
             </ul>
           </div>
 
-          <div class="beta-card">
-            <h3>Qué te llevas</h3>
-            <ul class="check">
-              <li>Acceso antes que nadie.</li>
-              <li>Insignia de “Fundador/a” (si quieres).</li>
-              <li>Derecho a decir: “yo estaba aquí antes del hype”. 😄</li>
+          <div class="roadmap__col">
+            <h3>Lo siguiente</h3>
+            <ul class="checks checks--next">
+              <li><span class="chk chk--off" aria-hidden="true"></span> Colecciones</li>
+              <li><span class="chk chk--off" aria-hidden="true"></span> Retos y emblemas</li>
+              <li><span class="chk chk--off" aria-hidden="true"></span> Ranking por ciudad</li>
+              <li><span class="chk chk--off" aria-hidden="true"></span> Beta pública</li>
             </ul>
-
-            <a class="btn btn--ghost" href="#waitlist">Me apunto</a>
           </div>
         </div>
 
         <p class="tiny muted">
-          Consejo: si prefieres separar waitlist y beta, cambia el formulario o añade otro (README).
+          *No prometemos fecha, prometemos cariño. Si te apuntas, te avisamos cuando esté.
         </p>
       </div>
     </section>
 
-    <section class="section section--faq">
+    <!-- WAITLIST -->
+    <section id="waitlist" class="section section--accent">
       <div class="container">
-        <h2>FAQ</h2>
-        <details>
-          <summary>¿Cuándo sale?</summary>
-          <p>Está en desarrollo. Queremos que salga bien, no “ya”. Si te apuntas, te avisamos en cuanto esté lista.</p>
-        </details>
-        <details>
-          <summary>¿Es solo para bares?</summary>
-          <p>El bar es secundario. Lo principal es el <strong>producto</strong>. Buscas lo que te apetece y luego eliges dónde.</p>
-        </details>
-        <details>
-          <summary>¿Cómo se hace el ranking?</summary>
-          <p>Con votos y fotos de la comunidad. Menos humo, más bocado.</p>
-        </details>
+        <div class="section__head">
+          <h2>Apúntate y te avisamos</h2>
+          <p class="section__sub">
+            Cero spam: solo lanzamiento, beta y alguna encuesta de guerra gastronómica.
+          </p>
+        </div>
+
+        <div class="formwrap">
+          <form id="waitlistForm" class="form" method="POST" action="https://formspree.io/f/REEMPLAZA_ESTE_ID">
+            <input type="hidden" name="_subject" value="[DeTapeo] Nuevo registro en la waitlist" />
+
+            <div class="form__grid">
+              <label class="field">
+                <span>Email</span>
+                <input name="email" type="email" placeholder="tuemail@ejemplo.com" autocomplete="email" required />
+              </label>
+
+              <label class="field">
+                <span>Ciudad (opcional)</span>
+                <input name="city" type="text" placeholder="Salamanca, Madrid…" autocomplete="address-level2" />
+              </label>
+
+              <label class="field form__span2">
+                <span>Producto favorito (opcional)</span>
+                <input name="favorite_product" type="text" placeholder="Croquetas, tortilla, bravas…" />
+              </label>
+            </div>
+
+            <div class="form__checks">
+              <label class="check">
+                <input name="consent" type="checkbox" required />
+                <span>Acepto que me contactéis para avisarme del lanzamiento (ver <a href="privacy.html">privacidad</a>).</span>
+              </label>
+
+              <label class="check">
+                <input id="betaOptIn" name="beta" type="checkbox" />
+                <span>Quiero entrar en la beta (si hace falta, os doy mi opinión sin piedad 😄).</span>
+              </label>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">Avisadme</button>
+
+            <p class="tiny muted">
+              *Tienes que cambiar el endpoint del formulario (ver README).
+            </p>
+
+            <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="aside">
+            <div class="aside__box">
+              <h3>¿Qué recibirás?</h3>
+              <ul class="list">
+                <li>📲 Aviso cuando salga.</li>
+                <li>🧪 Invitación a la beta (si te apuntas).</li>
+                <li>🗳️ Encuestas rápidas para decidir productos/categorías.</li>
+              </ul>
+            </div>
+
+            <div class="aside__box aside__box--soft">
+              <h3>Contacto</h3>
+              <p class="muted">Escríbenos si quieres colaborar o probar antes:</p>
+              <p><a class="mail" href="mailto:detapeoapp@gmail.com">detapeoapp@gmail.com</a></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p class="section__sub">Lo típico que se pregunta antes de lanzarse a la croqueta.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>¿Cuándo sale?</summary>
+            <p>
+              Está en desarrollo. Queremos que salga bien, no “ya”.
+              Si te apuntas a la lista, te avisamos en cuanto esté lista.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Es solo para bares?</summary>
+            <p>
+              El bar es secundario. Lo principal es el <strong>producto</strong>.
+              Buscas lo que te apetece y luego eliges dónde comerlo.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cómo se hace el ranking?</summary>
+            <p>
+              Con votos, reseñas y fotos de la comunidad. Cuantas más reseñas reales, más fiable.
+            </p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__grid">
-      <div class="muted">
-        <strong>DeTapeo</strong> · Producto primero
-        <div class="tiny">© <span id="year"></span></div>
+    <div class="container footer__row">
+      <div class="footer__left">
+        <div class="footer__brand">
+          <span aria-hidden="true">🍢</span>
+          <strong>DeTapeo</strong>
+        </div>
+        <div class="tiny muted">© <span id="year"></span> · Producto primero</div>
       </div>
 
       <div class="footer__links">
-        <!-- Pon aquí tu @ cuando lo tengas -->
+        <!-- Cambia este enlace por tu @ real cuando quieras -->
         <a href="#" aria-label="X">X</a>
         <a href="privacy.html">Privacidad</a>
       </div>

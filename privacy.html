@@ -3,63 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Política de privacidad de DeTapeo." />
   <title>Privacidad — DeTapeo</title>
-  <meta name="description" content="Política de privacidad simple para la waitlist de DeTapeo." />
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b0b0f" />
 </head>
+
 <body>
   <header class="header">
-    <div class="container row">
-      <a class="brand" href="index.html" aria-label="DeTapeo">
-        <span class="brand__mark">🍢</span>
+    <div class="container header__row">
+      <a class="brand" href="index.html" aria-label="DeTapeo, volver al inicio">
+        <span class="brand__mark" aria-hidden="true">🍢</span>
         <span class="brand__name">DeTapeo</span>
+        <span class="brand__badge">Privacidad</span>
       </a>
-      <nav class="nav">
-        <a href="index.html#waitlist" class="pill">Volver</a>
+
+      <nav class="nav" aria-label="Navegación">
+        <a href="index.html#waitlist" class="nav__cta">Volver</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="section">
-      <div class="container" style="max-width: 820px;">
-        <h2>Privacidad</h2>
-        <p class="lead2">
-          Esta página es una plantilla simple para cumplir “lo mínimo razonable” mientras estás en pre‑lanzamiento.
-          Personalízala antes de publicar si lo necesitas.
-        </p>
+      <div class="container" style="max-width: 900px;">
+        <div class="section__head">
+          <h2>Política de Privacidad de DeTapeo</h2>
+          <p class="section__sub">Última actualización: <strong>21 de diciembre de 2024</strong></p>
+        </div>
 
-        <div class="feature">
-          <h3>Qué datos recogemos</h3>
-          <p class="lead2">
-            Email (obligatorio) y, si lo rellenas, ciudad y producto favorito (opcionales).
+        <div class="panel">
+          <h3>1. Introducción</h3>
+          <p class="muted">
+            Bienvenido a DeTapeo. Nos comprometemos a proteger su privacidad.
+            Esta política explica cómo recopilamos, usamos y protegemos su información cuando utiliza nuestra aplicación móvil.
           </p>
 
-          <h3>Para qué los usamos</h3>
-          <p class="lead2">
-            Para avisarte del lanzamiento de DeTapeo, abrir beta tests y mandarte alguna encuesta relacionada con el producto.
-            No vendemos tus datos.
+          <h3 style="margin-top:16px;">2. Información que recopilamos</h3>
+          <p class="muted">
+            Para proporcionar nuestros servicios, la aplicación puede solicitar acceso a los siguientes datos:
           </p>
 
-          <h3>Dónde se guardan</h3>
-          <p class="lead2">
-            En el servicio que uses como formulario (por ejemplo, Formspree, Google Forms, Mailchimp, etc.).
-            Revisa su política de privacidad.
+          <ul class="list">
+            <li>
+              <span aria-hidden="true">👤</span>
+              <span><strong>Información de la cuenta:</strong> Al registrarse a través de Google o correo electrónico, recopilamos su dirección de correo electrónico, nombre y foto de perfil (avatar) para crear su cuenta de usuario y gestionar sus preferencias.</span>
+            </li>
+            <li>
+              <span aria-hidden="true">📍</span>
+              <span><strong>Ubicación (GPS):</strong> Solicitamos acceso a su ubicación precisa y aproximada para mostrarle bares, restaurantes y tapas cercanos a su posición en el mapa. Estos datos de ubicación no se almacenan en nuestros servidores de forma permanente para rastrear su historial de movimientos, solo se usan en tiempo real para la funcionalidad del mapa.</span>
+            </li>
+            <li>
+              <span aria-hidden="true">📷</span>
+              <span><strong>Cámara y Galería:</strong> Solicitamos acceso a sus fotos únicamente si usted decide subir una imagen para su foto de perfil o para compartir imágenes de tapas/bares en la comunidad.</span>
+            </li>
+          </ul>
+
+          <h3 style="margin-top:16px;">3. Cómo usamos su información</h3>
+          <p class="muted">Utilizamos la información recopilada para:</p>
+          <ul class="list">
+            <li><span aria-hidden="true">🔐</span><span>Autenticar su identidad y mantener su sesión iniciada.</span></li>
+            <li><span aria-hidden="true">🗺️</span><span>Mostrarle establecimientos cercanos (funcionalidad principal).</span></li>
+            <li><span aria-hidden="true">❤️</span><span>Permitirle guardar favoritos y personalizar su perfil.</span></li>
+          </ul>
+
+          <h3 style="margin-top:16px;">4. Servicios de Terceros</h3>
+          <p class="muted">
+            Compartimos datos con los siguientes proveedores de servicios necesarios para el funcionamiento de la App:
+          </p>
+          <ul class="list">
+            <li><span aria-hidden="true">🧩</span><span><strong>Supabase:</strong> Proveedor de base de datos y autenticación.</span></li>
+            <li><span aria-hidden="true">🔑</span><span><strong>Google OAuth:</strong> Para facilitar el inicio de sesión seguro.</span></li>
+            <li><span aria-hidden="true">🧭</span><span><strong>OpenStreetMap / Mapbox:</strong> Para la visualización de mapas.</span></li>
+          </ul>
+
+          <h3 style="margin-top:16px;">5. Eliminación de datos</h3>
+          <p class="muted">
+            Usted tiene derecho a eliminar su cuenta en cualquier momento. Puede solicitar la eliminación total de sus datos enviando un correo a
+            <a class="mail" href="mailto:detapeoapp@gmail.com">detapeoapp@gmail.com</a>
+            o mediante la opción <strong>"Eliminar cuenta"</strong> dentro de la configuración del perfil en la aplicación.
           </p>
 
-          <h3>Baja</h3>
-          <p class="lead2">
-            Puedes pedir la baja respondiendo al email que te enviemos o escribiéndonos a: <em>pon-aqui-tu-email@dominio.com</em>.
-          </p>
-
-          <h3>Responsable</h3>
-          <p class="lead2">
-            Responsable del tratamiento: <em>Tu nombre / Tu empresa</em>.
-          </p>
-
-          <p class="tiny muted">
-            Consejo: cuando te acerques al lanzamiento, prepara una política de privacidad completa y un aviso legal acorde a tu país.
+          <h3 style="margin-top:16px;">6. Contacto</h3>
+          <p class="muted">
+            Si tiene preguntas sobre esta política, contáctenos en:
+            <a class="mail" href="mailto:detapeoapp@gmail.com">detapeoapp@gmail.com</a>.
           </p>
         </div>
       </div>
@@ -67,11 +97,15 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__grid">
-      <div class="muted">
-        <strong>DeTapeo</strong> · Producto primero
-        <div class="tiny">© <span id="year"></span></div>
+    <div class="container footer__row">
+      <div class="footer__left">
+        <div class="footer__brand">
+          <span aria-hidden="true">🍢</span>
+          <strong>DeTapeo</strong>
+        </div>
+        <div class="tiny muted">© <span id="year"></span> · Producto primero</div>
       </div>
+
       <div class="footer__links">
         <a href="index.html">Inicio</a>
       </div>
@@ -79,7 +113,8 @@
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const yearEl = document.getElementById("year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
